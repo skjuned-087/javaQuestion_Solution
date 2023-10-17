@@ -1,0 +1,40 @@
+class Employee{
+    private String E_name;
+    private int E_id;
+    private int E_salary;
+
+    public void setname(String E_name){
+        this.E_name=E_name;
+    }
+    public String getname()
+    {
+        return E_name;
+    }
+
+    public void setid(int E_id){
+        this.E_id=E_id;
+    }
+    public int getid()
+    {
+        return E_id;
+    }
+
+    public void setsalary(int E_salary){
+        this.E_salary=E_salary;
+    }
+    public String getsalary()
+    {
+        return String.format("%d",E_salary);
+    }  
+}
+public class _Q1{
+    public static void main(String[] args) {
+        Employee emp=new Employee();
+        emp.setname("Sk juned");
+        emp.setid(87);
+        emp.setsalary(20000);
+        System.out.println("Employee name is :"+emp.getname());
+        System.out.println("Employee id is :"+emp.getid());
+        System.out.println("Employee salary is :"+emp.getsalary());
+    }
+}
