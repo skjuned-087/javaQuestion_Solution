@@ -1,0 +1,33 @@
+class bankAccound {
+    public int account_ballance;
+
+    public void Deposit(int ballance) {
+        account_ballance = account_ballance + ballance;
+        System.out.println("Your Bank has been credited "+ballance+" and your current ballance is "+account_ballance);
+    }
+
+    public void Withdraw(int ballance) {
+        if (account_ballance < 100) {
+            System.out.println("The ballance is too low you can't Withdraw :");
+        }
+        else{
+            account_ballance=account_ballance-ballance;
+            System.out.println("Your With draw amount is "+ballance+" and your bank ballance is "+account_ballance);
+        }
+    }
+}
+class savingAccount extends bankAccound {
+    @Override
+    public void Withdraw( int ballance){
+        int amount=ballance;
+        super.Withdraw(amount);
+        System.out.println("Hello world");
+    }
+}
+public class dynamic_memory_dispatch {
+    public static void main(String[] args) {
+        bankAccound bank=new savingAccount();
+        bank.Deposit(1000);
+        bank.Withdraw(200);
+    }
+}
