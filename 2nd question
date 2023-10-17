@@ -1,0 +1,27 @@
+class circle{
+    private double redius;
+    public void seter(double redius){
+        this.redius=redius;
+    }
+    public double geter()
+    {
+        return redius;
+    }
+    public double calculateArea()
+    {
+        return Math.PI*redius*redius;
+    }
+    public double calculatePerimeter()
+    {
+        return 2*Math.PI*redius;
+    }
+}
+public class _Q2 {
+    public static void main(String[] args) {
+        circle c1=new circle();
+        c1.seter(5.67);
+        System.out.println("Redius of circle is :"+c1.geter());
+        System.out.println("The Area of circle is :"+c1.calculateArea());
+        System.out.println("The perimeter of circle is :"+c1.calculatePerimeter());
+    }
+}
