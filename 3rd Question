@@ -1,0 +1,37 @@
+class student{
+    private int s_id;
+    private String s_name;
+    private char s_grades;
+
+    public void setid(int s_id){
+        this.s_id=s_id;
+    }
+    public int getid()
+    {
+        return s_id;
+    }
+
+    public void setname(String s_name){
+        this.s_name=s_name;
+    }
+    public String getname()
+    {
+        return s_name;
+    }
+
+    public char addgrade(char s_grades)
+    {
+        this.s_grades=s_grades;
+        return this.s_grades;
+    }
+}
+public class _Q3 {
+    public static void main(String[] args) {
+        student stu=new student();
+        stu.setid(51);
+        stu.setname("Sk juned");
+        System.out.println("Name of student is :"+stu.getname());
+        System.out.println("Id of student is :"+stu.getid());
+        System.out.println("Grade of student is :"+stu.addgrade('A'));
+    }
+}
