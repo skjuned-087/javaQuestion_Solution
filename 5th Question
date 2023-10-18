@@ -1,0 +1,25 @@
+class person {
+    public void getFirstName(String fname) {
+        System.out.println("Person first Name is "+fname);
+    }
+    public void getLastName(String lname) {
+        System.out.println("Person last Name is "+lname);
+    }
+}
+class employee extends person {
+    public void getEmoloyeeId(int id) {
+        System.out.println("Employee id is "+id);
+    }
+    @Override
+    public void getLastName(String lname) {
+        super.getLastName(lname);
+    }
+}
+public class _Q5 {
+    public static void main(String[] args) {
+        person p=new employee();
+        p.getFirstName("Sk");
+        p.getLastName("Juned");
+        ((employee) p ).getEmoloyeeId(128);
+    }
+}
