@@ -1,0 +1,90 @@
+class vehicle {
+    public void fule_efficiency(double mileage) {
+        if (mileage > 0 && mileage < 15) {
+            System.out.println("Fule efficiency is too Bad :");
+        } else if (mileage >= 15 && mileage < 30) {
+            System.out.println("Fule efficiency is Average :");
+        } else {
+            System.out.println("Fule efficiency is Good :");
+        }
+    }
+    public void distance_travel(int value) {
+        System.out.println("You cover " + value + "km in this Vehicle :");
+    }
+    public void maxspeed(int speed) {
+        System.out.println("This vehicle max speed is " + speed + "km/h ");
+    }
+}
+class truck extends vehicle {
+    public void make(String make) {
+        System.out.println("Truck is made up of " + make);
+    }
+    public void model(String model) {
+        System.out.println("Truck model no is " + model);
+    }
+    public void year(int year) {
+        System.out.println("Truck lunching year is " + year);
+    }
+    public void fule_type(String fule_type) {
+        System.out.println("Truck fule type is " + fule_type);
+    }
+}
+class car extends vehicle {
+    public void make(String make) {
+        System.out.println("Car is made up of " + make);
+    }
+    public void model(String model) {
+        System.out.println("Car model no is " + model);
+    }
+    public void year(int year) {
+        System.out.println("Car lunching year is " + year);
+    }
+    public void fule_type(String fule_type) {
+        System.out.println("Car fule type is " + fule_type);
+    }
+}
+class motorcycle extends vehicle {
+    public void make(String make) {
+        System.out.println("Motorcycle is made up of " + make);
+    }
+    public void model(String model) {
+        System.out.println("Motorcycle model no is " + model);
+    }
+    public void year(int year) {
+        System.out.println("Motorcycle lunching year is " + year);
+    }
+    public void fule_type(String fule_type) {
+        System.out.println("Motorcycle fule type is " + fule_type);
+    }
+}
+public class _Q6 {
+    public static void main(String[] args) {
+        vehicle v = new motorcycle();
+        ((motorcycle) v).model("1245AB7084U");
+        ((motorcycle) v).make("Aluminium");
+        ((motorcycle) v).fule_type("petrol");
+        ((motorcycle) v).year(2017);
+        v.distance_travel(23478);
+        v.fule_efficiency(34.8);
+        v.maxspeed(300);
+        System.out.println("\n\n");
+        vehicle v1 = new car();
+        ((car) v1).model("1245AB7084U");
+        ((car) v1).make("Aluminium");
+        ((car) v1).fule_type("petrol");
+        ((car) v1).year(2017);
+        v1.distance_travel(23478);
+        v1.fule_efficiency(34.8);
+        v1.maxspeed(300);
+        System.out.println("\n\n");
+        vehicle v2 = new truck();
+        ((truck) v2).model("1245AB7084U");
+        ((truck) v2).make("Aluminium");
+        ((truck) v2).fule_type("petrol");
+        ((truck) v2).year(2017);
+        v2.distance_travel(23478);
+        v2.fule_efficiency(34.8);
+        v2.maxspeed(300);
+        System.out.println();
+    }
+}
