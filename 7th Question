@@ -1,0 +1,57 @@
+abstract class Animal {
+    abstract void eat();
+    abstract void sleep();
+}
+class lion extends Animal {
+    public void eat() {
+        System.out.println("Lion eat Meat :");
+    }
+    public void sleep() {
+        System.out.println("Lion sleep in Cave");
+    }
+    public void Scientific_name() {
+        System.out.println("Lion's Scientific name is \"Panthera leo\" ");
+    }
+}
+class tiger extends Animal {
+    public void eat() {
+        System.out.println("Tiger eat Meat :");
+    }
+    public void sleep() {
+        System.out.println("Tiger sleep in Cave");
+    }
+    public void Scientific_name() {
+        System.out.println("Tiger's Scientific name is \"Panthera tigris\" ");
+    }
+}
+class deer extends Animal {
+    public void eat() {
+        System.out.println("Deer eat Grass :");
+    }
+    public void sleep() {
+        System.out.println("Deer sleep in Shade of Big tree");
+    }
+    public void Scientific_name() {
+        System.out.println("Lion's Scientific name is \"Cervidae \" ");
+    }
+}
+public class _Q7 {
+    public static void main(String[] args) {
+        System.out.println("\nAll lion property \n");
+        lion l = new lion();
+        l.eat();
+        l.sleep();
+        l.Scientific_name();
+        System.out.println("\nAll tiger property\n");
+        tiger t = new tiger();
+        t.eat();
+        t.sleep();
+        t.Scientific_name();
+        System.out.println("\n All Deer property\n");
+        deer d = new deer();
+        d.eat();
+        d.sleep();
+        d.Scientific_name();
+        System.out.println("\n");
+    }
+}
